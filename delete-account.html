@@ -1,28 +1,197 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <title>Delete Account - ADC Mart</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(180deg, #f3fff8 0%, #ffffff 45%);
+      color: #1f2937;
+      line-height: 1.6;
+      padding: 20px 14px 40px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 520px;
+      margin: 0 auto;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .icon {
+      width: 68px;
+      height: 68px;
+      margin: 0 auto 12px;
+      border-radius: 20px;
+      background: #e8f8ef;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+    }
+
+    h1 {
+      font-size: 26px;
+      line-height: 1.25;
+      color: #12372a;
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      color: #64748b;
+      font-size: 15px;
+    }
+
+    .card {
+      background: #ffffff;
+      border: 1px solid #e6eee9;
+      border-radius: 18px;
+      padding: 20px;
+      margin-bottom: 16px;
+      box-shadow: 0 8px 24px rgba(20, 83, 45, 0.07);
+    }
+
+    h2 {
+      font-size: 18px;
+      color: #174d36;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 15px;
+      color: #475569;
+    }
+
+    ol {
+      padding-left: 22px;
+      color: #475569;
+    }
+
+    li {
+      margin-bottom: 10px;
+      padding-left: 4px;
+    }
+
+    .email-box {
+      display: block;
+      margin-top: 14px;
+      padding: 14px;
+      border-radius: 12px;
+      background: #f0faf4;
+      border: 1px solid #d8efe1;
+      color: #146c43;
+      font-weight: 700;
+      text-align: center;
+      text-decoration: none;
+      word-break: break-word;
+    }
+
+    .email-box:active {
+      transform: scale(0.98);
+    }
+
+    .notice {
+      background: #fff8e8;
+      border-color: #f5dfaa;
+    }
+
+    .notice h2 {
+      color: #8a5a00;
+    }
+
+    .footer {
+      text-align: center;
+      color: #94a3b8;
+      font-size: 13px;
+      padding-top: 8px;
+    }
+
+    @media (min-width: 600px) {
+      body {
+        padding-top: 40px;
+      }
+
+      .card {
+        padding: 24px;
+      }
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Delete Account - ADC Mart</h1>
+  <main class="container">
+    <header class="header">
+      <div class="icon">🗑️</div>
+      <h1>Delete Your ADC Mart Account</h1>
+      <p class="subtitle">
+        Request deletion of your account and associated personal data.
+      </p>
+    </header>
 
-  <p>Users of the ADC Mart app can request deletion of their account and associated data.</p>
+    <section class="card">
+      <h2>How to request deletion</h2>
 
-  <h2>How to request account deletion</h2>
-  <ol>
-    <li>Email us at <strong>adctechsupport@gmail.com</strong></li>
-    <li>Use the subject: <strong>Delete my ADC Mart account</strong></li>
-    <li>Include your registered mobile number in the email.</li>
-  </ol>
+      <ol>
+        <li>Email our support team.</li>
+        <li>
+          Use the subject:
+          <strong>Delete my ADC Mart account</strong>
+        </li>
+        <li>Include your registered mobile number.</li>
+      </ol>
 
-  <h2>Data deleted</h2>
-  <p>We delete your account profile, registered mobile number, saved addresses, and app account data.</p>
+      <a
+        class="email-box"
+        href="mailto:adctechsupport@gmail.com?subject=Delete%20my%20ADC%20Mart%20account"
+      >
+        adctechsupport@gmail.com
+      </a>
+    </section>
 
-  <h2>Data retained</h2>
-  <p>Order records, invoices, payment records, fraud-prevention records, and legal/compliance records may be retained where required by law or business obligations.</p>
+    <section class="card">
+      <h2>Data that will be deleted</h2>
+      <p>
+        Your account profile, registered mobile number, saved addresses,
+        and other app account data will be deleted.
+      </p>
+    </section>
 
-  <h2>Retention period</h2>
-  <p>Deletion requests are processed within 30 days. Data required for legal, tax, security, or dispute purposes may be retained for the required retention period.</p>
+    <section class="card">
+      <h2>Data that may be retained</h2>
+      <p>
+        Order records, invoices, payment records, fraud-prevention records,
+        and legal or compliance records may be retained where required by law
+        or business obligations.
+      </p>
+    </section>
+
+    <section class="card notice">
+      <h2>Processing time</h2>
+      <p>
+        Account deletion requests are processed within 30 days. Information
+        required for legal, tax, security, or dispute purposes may be retained
+        for the legally required period.
+      </p>
+    </section>
+
+    <footer class="footer">
+      © ADC Mart. All rights reserved.
+    </footer>
+  </main>
 </body>
 </html>
