@@ -2,277 +2,577 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <meta
       name="description"
-      content="Privacy Policy for Adc Mart, including how delivery address, location, mobile number, and order information are used."
+      content="Privacy Policy for Maxima Store, including how personal, delivery, location, mobile number, and order information are handled."
     />
-    <title>Privacy Policy | Adc Mart</title>
+
+    <title>Privacy Policy | Maxima Store</title>
+
     <style>
       :root {
         color-scheme: light;
-        --bg: #f7f8fb;
+        --background: #f3f8f5;
         --card: #ffffff;
-        --text: #172033;
-        --muted: #5b6475;
-        --border: #dfe4ee;
-        --primary: #275ee8;
+        --text: #173126;
+        --muted: #5f6f67;
+        --border: #dce8e1;
+        --primary: #178653;
+        --primary-dark: #0f663e;
+        --primary-light: #eaf8f0;
+        --warning-bg: #fff8e8;
+        --warning-border: #f3dfad;
+        --shadow: 0 12px 34px rgba(20, 83, 52, 0.08);
       }
 
       * {
         box-sizing: border-box;
       }
 
+      html {
+        scroll-behavior: smooth;
+      }
+
       body {
         margin: 0;
-        background: var(--bg);
+        min-height: 100vh;
+        background:
+          linear-gradient(180deg, #eaf8f0 0%, #f6faf8 260px, var(--background) 100%);
         color: var(--text);
         font-family:
           Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
           "Segoe UI", sans-serif;
-        line-height: 1.65;
+        line-height: 1.7;
       }
 
       main {
-        width: min(920px, calc(100% - 32px));
+        width: min(920px, calc(100% - 28px));
         margin: 0 auto;
-        padding: 48px 0;
+        padding: 28px 0 40px;
       }
 
       article {
+        overflow: hidden;
         background: var(--card);
         border: 1px solid var(--border);
+        border-radius: 22px;
+        box-shadow: var(--shadow);
+      }
+
+      .hero {
+        background:
+          radial-gradient(
+            circle at top right,
+            rgba(255, 255, 255, 0.45),
+            transparent 36%
+          ),
+          linear-gradient(135deg, var(--primary-dark), var(--primary));
+        color: #ffffff;
+        padding: clamp(28px, 7vw, 56px);
+      }
+
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 16px;
+        font-size: 0.86rem;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .brand-icon {
+        display: grid;
+        width: 38px;
+        height: 38px;
+        place-items: center;
+        border: 1px solid rgba(255, 255, 255, 0.35);
         border-radius: 12px;
-        box-shadow: 0 12px 30px rgba(23, 32, 51, 0.06);
-        padding: clamp(24px, 5vw, 48px);
+        background: rgba(255, 255, 255, 0.16);
+        font-size: 20px;
       }
 
       h1,
       h2 {
-        line-height: 1.2;
-        margin: 0;
+        line-height: 1.25;
       }
 
       h1 {
-        font-size: clamp(2rem, 4vw, 3rem);
-        letter-spacing: 0;
+        margin: 0;
+        font-size: clamp(2rem, 8vw, 3.2rem);
+        letter-spacing: -0.04em;
+      }
+
+      .updated {
+        margin: 10px 0 0;
+        color: rgba(255, 255, 255, 0.82);
+        font-size: 0.95rem;
+      }
+
+      .content {
+        padding: clamp(22px, 5vw, 48px);
+      }
+
+      .summary {
+        margin: 0 0 30px;
+        padding: 18px;
+        border: 1px solid #cfe8da;
+        border-radius: 15px;
+        background: var(--primary-light);
+        color: #315645;
+      }
+
+      section {
+        scroll-margin-top: 20px;
       }
 
       h2 {
-        border-top: 1px solid var(--border);
-        font-size: 1.25rem;
-        margin-top: 32px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin: 30px 0 0;
         padding-top: 28px;
+        border-top: 1px solid var(--border);
+        color: var(--text);
+        font-size: 1.2rem;
+      }
+
+      section:first-of-type h2 {
+        margin-top: 0;
+        padding-top: 0;
+        border-top: 0;
+      }
+
+      .number {
+        display: inline-grid;
+        flex: 0 0 auto;
+        width: 30px;
+        height: 30px;
+        place-items: center;
+        border-radius: 9px;
+        background: var(--primary-light);
+        color: var(--primary-dark);
+        font-size: 0.82rem;
+        font-weight: 800;
       }
 
       p,
       ul {
-        color: var(--muted);
         margin: 12px 0 0;
+        color: var(--muted);
       }
 
       ul {
         padding-left: 22px;
       }
 
+      li {
+        padding-left: 3px;
+      }
+
       li + li {
-        margin-top: 8px;
+        margin-top: 9px;
+      }
+
+      strong {
+        color: var(--text);
       }
 
       a {
-        color: var(--primary);
-      }
-
-      .eyebrow {
-        color: var(--primary);
-        font-size: 0.875rem;
+        color: var(--primary-dark);
         font-weight: 700;
-        letter-spacing: 0.08em;
-        margin-bottom: 12px;
-        text-transform: uppercase;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 3px;
       }
 
-      .updated {
-        color: var(--muted);
-        margin-top: 10px;
+      a:hover {
+        color: var(--primary);
       }
 
-      .summary {
-        background: #f1f5ff;
-        border: 1px solid #d7e2ff;
-        border-radius: 10px;
-        color: #263653;
-        margin-top: 24px;
-        padding: 18px 20px;
+      .deletion-box {
+        margin-top: 16px;
+        padding: 18px;
+        border: 1px solid var(--warning-border);
+        border-radius: 15px;
+        background: var(--warning-bg);
+      }
+
+      .email-button {
+        display: block;
+        margin-top: 16px;
+        padding: 14px 16px;
+        border-radius: 12px;
+        background: var(--primary);
+        color: #ffffff;
+        font-weight: 800;
+        text-align: center;
+        text-decoration: none;
+        word-break: break-word;
+        transition:
+          transform 0.2s ease,
+          background 0.2s ease;
+      }
+
+      .email-button:hover {
+        background: var(--primary-dark);
+        color: #ffffff;
+        transform: translateY(-1px);
+      }
+
+      .email-button:active {
+        transform: scale(0.98);
       }
 
       footer {
+        padding: 22px 12px 0;
         color: var(--muted);
-        font-size: 0.9rem;
-        margin-top: 24px;
+        font-size: 0.88rem;
         text-align: center;
+      }
+
+      @media (max-width: 600px) {
+        main {
+          width: min(100% - 20px, 920px);
+          padding-top: 10px;
+        }
+
+        article {
+          border-radius: 18px;
+        }
+
+        .hero {
+          padding: 28px 22px;
+        }
+
+        .content {
+          padding: 24px 20px 30px;
+        }
+
+        h2 {
+          align-items: flex-start;
+          font-size: 1.1rem;
+        }
+
+        .summary {
+          padding: 16px;
+        }
       }
     </style>
   </head>
+
   <body>
     <main>
       <article>
-        <p class="eyebrow">Adc Mart</p>
-        <h1>Privacy Policy</h1>
-        <p class="updated">Last updated: July 4, 2026</p>
+        <header class="hero">
+          <div class="brand">
+            <span class="brand-icon">🛒</span>
+            <span>Maxima Store</span>
+          </div>
 
-        <p class="summary">
-          This Privacy Policy explains how Adc Mart collects, uses, stores, and
-          protects information when you use our mobile application and related
-          services.
-        </p>
+          <h1>Privacy Policy</h1>
+          <p class="updated">Last updated: July 4, 2026</p>
+        </header>
 
-        <h2>1. Information We Collect</h2>
-        <p>
-          We collect only the information needed to provide shopping, ordering,
-          delivery, and customer support services.
-        </p>
-        <ul>
-          <li>
-            Account information such as your name, mobile number, and login
-            details.
-          </li>
-          <li>
-            Delivery information such as your address, house or flat details,
-            landmark, city, area, and pincode.
-          </li>
-          <li>
-            Location information when you choose to use location services to
-            detect or confirm your delivery address.
-          </li>
-          <li>
-            Order information such as products added to cart, placed orders,
-            delivery status, and order history.
-          </li>
-          <li>
-            Device and technical information such as app version, device type,
-            diagnostics, and basic usage data needed to improve reliability.
-          </li>
-        </ul>
+        <div class="content">
+          <p class="summary">
+            This Privacy Policy explains how Maxima Store collects, uses,
+            stores, shares, and protects your information when you use our
+            mobile application and related services.
+          </p>
 
-        <h2>2. How We Use Your Information</h2>
-        <p>We use your information for the following purposes:</p>
-        <ul>
-          <li>To create and manage your Adc Mart account.</li>
-          <li>To confirm whether delivery is available at your address.</li>
-          <li>To process, pack, dispatch, and deliver your orders.</li>
-          <li>
-            To use your mobile number for order updates, delivery coordination,
-            customer support, and account verification.
-          </li>
-          <li>To show relevant products, categories, offers, and app content.</li>
-          <li>To prevent fraud, misuse, and unauthorized activity.</li>
-          <li>To improve app performance, stability, and user experience.</li>
-        </ul>
+          <section>
+            <h2>
+              <span class="number">1</span>
+              Information We Collect
+            </h2>
 
-        <h2>3. Location Information</h2>
-        <p>
-          Adc Mart may request access to your location to help fill or confirm
-          your delivery address and check delivery availability in your area. We
-          do not use location access for background tracking. You can disable
-          location permission at any time from your device settings, but some
-          delivery address features may not work correctly without it.
-        </p>
+            <p>
+              We collect only the information required to provide shopping,
+              ordering, delivery, payment, and customer support services.
+            </p>
 
-        <h2>4. Mobile Number and Delivery Communication</h2>
-        <p>
-          We use your mobile number to identify your account, verify login,
-          contact you about your orders, coordinate deliveries, and provide
-          customer support. Delivery staff or service partners may use your
-          mobile number only when required to complete or support your delivery.
-        </p>
+            <ul>
+              <li>
+                Account information such as your name, mobile number, and login
+                details.
+              </li>
+              <li>
+                Delivery information such as your address, house or flat
+                details, landmark, city, area, and pincode.
+              </li>
+              <li>
+                Location information when you choose to detect or confirm your
+                delivery address using location services.
+              </li>
+              <li>
+                Order information such as products added to your cart, placed
+                orders, delivery status, and order history.
+              </li>
+              <li>
+                Device and technical information such as app version, device
+                type, diagnostics, and basic usage data.
+              </li>
+            </ul>
+          </section>
 
-        <h2>5. Sharing of Information</h2>
-        <p>
-          We do not sell your personal information. We may share limited
-          information only when necessary with:
-        </p>
-        <ul>
-          <li>Delivery partners or staff for delivering your orders.</li>
-          <li>Technology and hosting providers that help us operate the app.</li>
-          <li>
-            Payment or transaction service providers, if online payment features
-            are used.
-          </li>
-          <li>
-            Government, law enforcement, or legal authorities when required by
-            applicable law.
-          </li>
-        </ul>
+          <section>
+            <h2>
+              <span class="number">2</span>
+              How We Use Your Information
+            </h2>
 
-        <h2>6. Payments</h2>
-        <p>
-          If Adc Mart enables online payments, payment details may be processed
-          by trusted payment service providers. We do not store your full card,
-          bank, or payment credential details on our app servers.
-        </p>
+            <p>We use your information for the following purposes:</p>
 
-        <h2>7. Data Security</h2>
-        <p>
-          We use reasonable technical and organizational measures to protect your
-          information from unauthorized access, misuse, loss, or alteration.
-          However, no digital service can guarantee complete security.
-        </p>
+            <ul>
+              <li>To create and manage your Maxima Store account.</li>
+              <li>To verify login and account access.</li>
+              <li>To confirm delivery availability at your address.</li>
+              <li>To process, pack, dispatch, and deliver your orders.</li>
+              <li>
+                To send order updates and coordinate with you during delivery.
+              </li>
+              <li>To provide customer support.</li>
+              <li>To show relevant products, categories, offers, and content.</li>
+              <li>To prevent fraud, misuse, and unauthorized activity.</li>
+              <li>
+                To improve app performance, reliability, and user experience.
+              </li>
+            </ul>
+          </section>
 
-        <h2>8. Data Retention</h2>
-        <p>
-          We keep your information only for as long as needed to provide our
-          services, meet legal obligations, resolve disputes, prevent fraud, and
-          maintain business records such as order history and delivery records.
-        </p>
+          <section>
+            <h2>
+              <span class="number">3</span>
+              Location Information
+            </h2>
 
-        <h2>9. Your Choices and Rights</h2>
-        <p>You may:</p>
-        <ul>
-          <li>Update or correct your address and account information.</li>
-          <li>Disable location permission from your device settings.</li>
-          <li>Contact us to request account or data-related support.</li>
-          <li>Uninstall the app if you no longer want to use Adc Mart.</li>
-        </ul>
+            <p>
+              Maxima Store may request access to your location to help detect or
+              confirm your delivery address and check delivery availability in
+              your area.
+            </p>
 
-        <h2>10. Children's Privacy</h2>
-        <p>
-          Adc Mart is intended for users who can place orders and provide valid
-          delivery information. We do not knowingly collect personal information
-          from children without appropriate consent.
-        </p>
+            <p>
+              We do not use location access for continuous background tracking.
+              You can disable location permission at any time from your device
+              settings. Some delivery address features may not work correctly
+              without location permission.
+            </p>
+          </section>
 
-        <h2>Account and Data Deletion</h2>
-<p>
-  Users can request deletion of their ADC Mart account and associated data by emailing us at
-  <strong>adctechsupport@gmail.com</strong> with the subject
-  <strong>Delete my ADC Mart account</strong> and their registered mobile number.
-</p>
-<p>
-  We delete account profile data, registered mobile number, saved addresses, and app account data.
-  Order records, invoices, payment records, fraud-prevention records, and legal/compliance records
-  may be retained where required by law or business obligations.
-</p>
-<p>
-  Deletion requests are processed within 30 days. Data required for legal, tax, security, or dispute
-  purposes may be retained for the required retention period.
-</p>
-        
-        <h2>11. Changes to This Privacy Policy</h2>
-        <p>
-          We may update this Privacy Policy from time to time. When we make
-          changes, we will update the date at the top of this page. Continued use
-          of the app after an update means you accept the revised policy.
-        </p>
+          <section>
+            <h2>
+              <span class="number">4</span>
+              Mobile Number and Delivery Communication
+            </h2>
 
-        <h2>12. Contact Us</h2>
-        <p>
-          If you have questions about this Privacy Policy or your personal
-          information, contact us at
-          <a href="mailto:adctechsupport@gmail.com">adctechsupport@gmail.com</a>.
-        </p>
+            <p>
+              We use your mobile number to identify your account, verify login,
+              provide order updates, coordinate deliveries, and offer customer
+              support.
+            </p>
+
+            <p>
+              Delivery staff or service partners may use your mobile number only
+              when required to complete or support your delivery.
+            </p>
+          </section>
+
+          <section>
+            <h2>
+              <span class="number">5</span>
+              Sharing of Information
+            </h2>
+
+            <p>
+              We do not sell your personal information. We may share limited
+              information only when necessary with:
+            </p>
+
+            <ul>
+              <li>Delivery partners or staff responsible for your order.</li>
+              <li>Technology and hosting providers that operate the app.</li>
+              <li>
+                Payment or transaction providers when online payment services
+                are used.
+              </li>
+              <li>
+                Government, law enforcement, or legal authorities when required
+                by applicable law.
+              </li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>
+              <span class="number">6</span>
+              Payments
+            </h2>
+
+            <p>
+              When Maxima Store enables online payments, payment information may
+              be processed by trusted payment service providers.
+            </p>
+
+            <p>
+              We do not store your full card number, bank credentials, UPI PIN,
+              or other sensitive payment authentication information on our app
+              servers.
+            </p>
+          </section>
+
+          <section>
+            <h2>
+              <span class="number">7</span>
+              Data Security
+            </h2>
+
+            <p>
+              We use reasonable technical and organizational measures to
+              protect your information from unauthorized access, misuse, loss,
+              alteration, or disclosure.
+            </p>
+
+            <p>
+              However, no digital service or internet transmission method can
+              guarantee complete security.
+            </p>
+          </section>
+
+          <section>
+            <h2>
+              <span class="number">8</span>
+              Data Retention
+            </h2>
+
+            <p>
+              We retain your information only for as long as necessary to
+              provide our services, meet legal and tax requirements, resolve
+              disputes, prevent fraud, and maintain required business records.
+            </p>
+          </section>
+
+          <section>
+            <h2>
+              <span class="number">9</span>
+              Your Choices and Rights
+            </h2>
+
+            <p>You may:</p>
+
+            <ul>
+              <li>Update or correct your account and delivery information.</li>
+              <li>Disable location permission from your device settings.</li>
+              <li>Contact us for account or data-related support.</li>
+              <li>Request deletion of your account and associated data.</li>
+              <li>Uninstall the app when you no longer want to use it.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>
+              <span class="number">10</span>
+              Children's Privacy
+            </h2>
+
+            <p>
+              Maxima Store is intended for users who can legally place orders
+              and provide valid delivery information.
+            </p>
+
+            <p>
+              We do not knowingly collect personal information from children
+              without appropriate consent.
+            </p>
+          </section>
+
+          <section>
+            <h2>
+              <span class="number">11</span>
+              Account and Data Deletion
+            </h2>
+
+            <div class="deletion-box">
+              <p>
+                You can request deletion of your Maxima Store account and
+                associated data by emailing:
+              </p>
+
+              <a
+                class="email-button"
+                href="mailto:adctechsupport@gmail.com?subject=Delete%20my%20Maxima%20Store%20account"
+              >
+                adctechsupport@gmail.com
+              </a>
+
+              <p>
+                Use the subject
+                <strong>Delete my Maxima Store account</strong> and include your
+                registered mobile number.
+              </p>
+
+              <p>
+                We delete your account profile, registered mobile number, saved
+                addresses, and other app account data.
+              </p>
+
+              <p>
+                Order records, invoices, payment records, fraud-prevention
+                records, and legal or compliance records may be retained where
+                required by law or legitimate business obligations.
+              </p>
+
+              <p>
+                Deletion requests are processed within 30 days. Information
+                required for legal, tax, security, fraud-prevention, or dispute
+                purposes may be retained for the required retention period.
+              </p>
+            </div>
+          </section>
+
+          <section>
+            <h2>
+              <span class="number">12</span>
+              Changes to This Privacy Policy
+            </h2>
+
+            <p>
+              We may update this Privacy Policy from time to time. When changes
+              are made, the updated date will be displayed at the top of this
+              page.
+            </p>
+
+            <p>
+              Continued use of Maxima Store after an update means you accept the
+              revised Privacy Policy.
+            </p>
+          </section>
+
+          <section>
+            <h2>
+              <span class="number">13</span>
+              Contact Us
+            </h2>
+
+            <p>
+              For questions about this Privacy Policy, your account, or your
+              personal information, contact us at:
+            </p>
+
+            <a
+              class="email-button"
+              href="mailto:adctechsupport@gmail.com?subject=Maxima%20Store%20Privacy%20Support"
+            >
+              Contact Maxima Store Support
+            </a>
+          </section>
+        </div>
       </article>
-      <footer>© 2026 Adc Mart. All rights reserved.</footer>
+
+      <footer>© 2026 Maxima Store. All rights reserved.</footer>
     </main>
   </body>
 </html>
